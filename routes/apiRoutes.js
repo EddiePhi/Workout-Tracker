@@ -7,7 +7,7 @@
 
 // require("dotenv").config();
 const router = require("express").Router();
-const Workout = require("../models/workout.js");
+const Workout = require("../models/Workout.js");
 
 // Aggregate function reference from JoelDore. Not used.
 // const setTotalDurations = () => {
