@@ -28,6 +28,7 @@ router.post('/api/workouts', (req, res) => {
     })
 });
 
+// Assitance from https://github.com/DustinErwin and class Intructor Jim Dhima
 // GET workouts within a range
 router.get('/api/workouts/range', (req, res) => {
     Workout.find({}).then((data) => {
