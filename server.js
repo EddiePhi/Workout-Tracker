@@ -2,7 +2,7 @@
   // https://github.com/EddiePhi/Gardening-App 
   // https://github.com/lpham2525/workout_tracker
 
-require('dotenv').config()
+// require('dotenv').config()
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -15,10 +15,9 @@ app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // ================================================================================
 // ROUTER
