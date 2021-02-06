@@ -34,8 +34,8 @@ mongoose.connect(
 // ================================================================================
 app.use(require("./routes/apiRoutes.js"));
 // require("./routes/apiRoutes.js")(app);
-app.use(require("./routes/htmlRoutes.js"));
-// require("./routes/htmlRoutes.js")(app);
+// app.use(require("./routes/htmlRoutes.js"));
+require("./routes/htmlRoutes.js")(app);
 
 
 ///////
