@@ -2,7 +2,6 @@
   // https://github.com/EddiePhi/Gardening-App 
   // https://github.com/lpham2525/workout_tracker
   // https://github.com/JoelDore
-
 // Assitance from https://github.com/DustinErwin and class Intructor Jim Dhima
 
 // require("dotenv").config();
@@ -73,7 +72,6 @@ router.put('/api/workouts/:id', (req, res) => {
         res.json(err)
     })
 });
-
 
 
 module.exports = router;

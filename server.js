@@ -1,8 +1,9 @@
-// Referencing Week 17 Act 14, Gardening-App project, and Lanchi Pham (lpham2525) on Github
+// Referencing Week 17 Act 14, Gardening-App project, Lanchi Pham (lpham2525) & JoelDore on Github
   // https://github.com/EddiePhi/Gardening-App 
   // https://github.com/lpham2525/workout_tracker
+  // https://github.com/JoelDore
+// Assitance from https://github.com/DustinErwin and class Intructor Jim Dhima
 
-// require('dotenv').config()
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -33,13 +34,7 @@ mongoose.connect(
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 app.use(require("./routes/apiRoutes.js"));
-// require("./routes/apiRoutes.js")(app);
-// app.use(require("./routes/htmlRoutes.js"));
 require("./routes/htmlRoutes.js")(app);
-
-
-///////
-
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

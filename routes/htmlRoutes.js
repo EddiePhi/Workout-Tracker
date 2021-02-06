@@ -1,8 +1,10 @@
-// Referencing Week 17 Act 14, Gardening-App project, and Lanchi Pham (lpham2525) on Github
+// Referencing Week 17 Act 14, Gardening-App project, Lanchi Pham (lpham2525) & JoelDore on Github
   // https://github.com/EddiePhi/Gardening-App 
   // https://github.com/lpham2525/workout_tracker
+  // https://github.com/JoelDore
+// Assitance from https://github.com/DustinErwin and class Intructor Jim Dhima
 
-// const router = require("express").Router();
+
 const path = require("path");
 
 module.exports = function (app) {
@@ -19,9 +21,4 @@ app.get('/stats', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/stats.html'))
 });
 
-// router.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../public/index.html'))
-// })
-
-// module.exports = router;
 };
